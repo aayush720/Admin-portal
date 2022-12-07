@@ -1,0 +1,57 @@
+.widget{
+
+//    margin-right: 20px; because we use gap 20 px already in home.scss
+display: flex;
+justify-content: space-between;
+flex: 1;
+padding: 10px;
+box-shadow: 2px 4px 10px 1px rgba(201,201,201,.47);
+border-radius: 10px;
+height: 100px;
+
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1;
+    .title{
+        font-weight: bold;
+        font-size: 1rem;
+        color:rgb(146, 142, 142)
+        
+    }
+    .counter{
+        font-size: 1.5rem;
+
+    }
+    .link{
+        width: max-content;
+        font-size: 12px;
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        }
+
+        .percentage{
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            &.positive{
+                color:green;
+            }
+            &.negative{
+                color:red;
+            }
+        }
+
+
+    .icon{
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 5px;
+       
+        border-radius: 5px solid gray;
+        align-self: flex-end; //for the particular this icon instead of all child
+    }
+}
+}

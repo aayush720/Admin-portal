@@ -1,0 +1,85 @@
+.sidebar{
+    background-color: white;
+    border-right:.5px solid rgb(235, 225, 225);
+    min-height: 100vh;
+     flex: 1;
+     box-sizing: border-box;
+    .top{
+        // background-color: purple;
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    }
+    hr{
+        border:.5px solid rgb(235, 225, 225);
+    
+    }
+    .center{
+        
+        padding-right: 0.5rem;
+
+        .title{
+            color: black;
+            font-size: .8rem;
+            font-weight: bold;
+            margin-top: .8rem;
+            margin-bottom: .1rem;
+            margin-left: .3rem;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            padding: .3rem;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: rgb(200, 215, 221);
+            }
+            .icon{
+                font-size: 1rem;
+                color: #7451f8;
+            }
+            span{
+                font-size: .9rem;
+                font-weight: 600;
+                color:#888;
+                margin-left: 0.6rem;
+            }
+        }
+
+    }
+    .bottom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.8rem;
+
+      .colorOption{
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #7451f8;
+        cursor: pointer;
+        margin:5px;
+
+        &:nth-child(1){
+            background-color: white;            
+        }
+        &:nth-child(2){
+            background-color:black;            
+        }
+       
+       
+      }
+    }
+}
